@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('Norse-Bold/norse-bold-webfont.woff2') format('woff2'),
+         url('Norse-Bold/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    max-width: 800px;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* LEFT Section with Company Logo */ 
+
+.left {
+    flex-basis: 33%;
+    min-width: auto;
+    background-image: url(https://images.unsplash.com/photo-1489549132488-d00b7eee80f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.company{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(25,25,25,0.7);
+    color: white;
+    font-family: norsebold;
+    font-size: 7vh;
+    padding: 10px;
+}
+
+#logo {
+    height: 10vh;
+    padding-right: 5px;
+}
+
+/* RIGHT Section with Form */ 
+.right {
+    flex-basis: 67%;
+    background-color: rgb(240, 240, 240);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    font-family: Helvetica, sans-serif;
+}
+
+.intro {
+    margin-top: 5%;
+    font-weight: 600;
+    padding: 10px 25px;
+}
+
+/* Middle Form Section */
+
+.formSection {
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    padding: 0 25px 25px 25px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+form > div {
+    flex-basis: 50%;
+}
+
+label, input {
+    display: block;
+}
+
+
+label {
+    color:#404040;
+    font-weight: 600;
+    font-size: 0.5em;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 5px;
+    width: 85%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border: 1px solid #377aff;
+    outline-color: 0;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+input:focus-visible {
+    outline: 0;
+}
+
+.error {
+    border: 1px solid #ff3737;
+    margin-bottom: 0;
+}
+
+.validated {
+    border: 1px solid #596D48;
+    margin-bottom: 0;
+}
+
+.passwordErrorText {
+    margin: 0;
+    padding: 0;
+    font-size: 0.6rem;
+    color: #ff3737;
+}
+
+.passwordMatchText {
+    margin: 0;
+    padding: 0;
+    font-size: 0.6rem;
+    color: #596D48;
+}
+
+/* Bottom right section */
+
+.submitLogin {
+    padding: 25px;
+}
+
+.submitLogin > p {
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #596D48;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #7DA25D;
+}
+
+button:active {
+    background-color: #404040;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 630px) {
+    .left {
+        flex-basis: 67%;
+        padding: 0;
+    }
+
+    .company{
+        margin: 0;
+    }
+
+    form > div {
+        flex-basis: 100%;
+    }
+
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="company">
+                <img id="logo" src="https://mechetenco.com/assets/images/lightlogo.png">
+                <div class="companyName"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="intro">
+                <p> This is not a real online service! You know you need something like this in your life to realize your deepest dreams. <br>
+                Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="formSection">
+                <p>Let's do this!</p>
+                <form action="" method="get">
+                    <div>
+                        <label for="firstName">FIRST NAME *</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                    </div>
+                    <div>
+                        <label for="lastName">LAST NAME *</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Doe" required>    
+                    </div>
+                    <div>
+                        <label for="email">EMAIL *</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div>
+                        <label for="password1">PASSWORD *</label>
+                        <input type="password" id="password1" name="password1" class="error" required>
+                    </div>
+                    <div>
+                        <label for="password2">RETYPE PASSWORD *</label>
+                        <input type="password" id="password2" name="password2" class="error" required>
+                        <p id="passwordInfo" class="passwordErrorText">* No password set</p>
+
+                    </div>
+            </div>
+            <div class="submitLogin">
+                <button>SIGNUP</button>
+                </form>
+                <p>Already have an account? <a href="">LOGIN</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
